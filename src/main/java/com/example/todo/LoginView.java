@@ -26,7 +26,7 @@ public class LoginView extends VerticalLayout implements View {
 		user = new TextField("User: ");
 		password = new PasswordField("Password: ");
 		loginButton = new Button("login");
-		
+		System.out.println("Hemlata");
 		VerticalLayout fields = new VerticalLayout(user, password, loginButton);
 		loginButton.addClickListener(event -> {
 			VaadinSession.getCurrent().setAttribute("user", user.getValue());
